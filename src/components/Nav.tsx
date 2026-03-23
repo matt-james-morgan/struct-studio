@@ -17,7 +17,7 @@ export default function Nav() {
     <Container size="lg" h="100%">
       <Group justify="space-between" h="100%">
         <Anchor component={Link} to="/" underline="never">
-          <Text fw={700} size="lg" c="navy">
+          <Text fw={700} size="lg" c="forest">
             Struct Studio
           </Text>
         </Anchor>

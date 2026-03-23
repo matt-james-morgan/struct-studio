@@ -73,8 +73,8 @@ export default function Contact() {
               p="xl"
               style={{
                 borderRadius: 12,
-                background: 'var(--mantine-color-navy-0)',
-                border: '1px solid var(--mantine-color-navy-2)',
+                background: 'var(--mantine-color-forest-0)',
+                border: '1px solid var(--mantine-color-forest-2)',
               }}
             >
               <Stack gap="sm">
@@ -129,7 +129,7 @@ export default function Contact() {
                   {...form.getInputProps('message')}
                 />
 
-                <Button type="submit" size="md" variant="filled" color="navy" radius="md">
+                <Button type="submit" size="md" variant="filled" color="forest" radius="md">
                   Send Message
                 </Button>
               </Stack>
@@ -138,7 +138,7 @@ export default function Contact() {
 
           <Text size="sm" c="dimmed">
             Prefer email?{' '}
-            <Anchor href="mailto:ink.and.interface.web@gmail.com" c="navy">
+            <Anchor href="mailto:ink.and.interface.web@gmail.com" c="forest">
               ink.and.interface.web@gmail.com
             </Anchor>
           </Text>

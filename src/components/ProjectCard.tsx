@@ -36,7 +36,7 @@ export default function ProjectCard({ project }: Props) {
               <Text fw={600} size="lg" c="dark">
                 {project.name}
               </Text>
-              <Badge variant="light" color="navy" size="sm">
+              <Badge variant="light" color="forest" size="sm">
                 {project.type}
               </Badge>
             </Group>
@@ -53,7 +53,7 @@ export default function ProjectCard({ project }: Props) {
               ))}
             </Group>
 
-            <Text size="sm" c="navy" fw={500} mt="xs">
+            <Text size="sm" c="forest" fw={500} mt="xs">
               View case study →
             </Text>
           </Stack>

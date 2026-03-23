@@ -27,42 +27,42 @@ const services = [
     title: 'Musician & Band Sites',
     description:
       'Bio, discography, tour dates, press kit, and music embeds. Built to help you get booked and grow your audience.',
-    color: 'navy',
+    color: 'forest',
   },
   {
     icon: IconPhoto,
     title: 'Artist Portfolios',
     description:
       'Gallery-forward designs that let your work speak for itself. Commission forms, shop integration, and artist statements.',
-    color: 'crimson',
+    color: 'forest',
   },
   {
     icon: IconSchool,
     title: 'Music & Arts Schools',
     description:
       'Scheduling pages, teacher profiles, student portals, and contact forms built for studios and academies.',
-    color: 'sage',
+    color: 'forest',
   },
   {
     icon: IconUsers,
     title: 'Creative Collectives',
     description:
       'Multi-member portfolio sites, shared event listings, and collaborative spaces for artist groups.',
-    color: 'navy',
+    color: 'forest',
   },
   {
     icon: IconDeviceLaptop,
     title: 'Landing Pages',
     description:
       'A focused, fast page for an album launch, event, or Kickstarter. Built to convert and easy to share.',
-    color: 'sage',
+    color: 'forest',
   },
   {
     icon: IconRefresh,
     title: 'Redesigns & Relaunches',
     description:
       'Already have a site that\'s feeling stale or broken? We\'ll take what you have and make it something you\'re proud of.',
-    color: 'crimson',
+    color: 'forest',
   },
 ]
 
@@ -111,8 +111,8 @@ export default function Services() {
           p="xl"
           style={{
             borderRadius: 12,
-            background: 'var(--mantine-color-navy-0)',
-            border: '1px solid var(--mantine-color-navy-2)',
+            background: 'var(--mantine-color-forest-0)',
+            border: '1px solid var(--mantine-color-forest-2)',
           }}
         >
           <Stack gap="md">
@@ -137,10 +137,10 @@ export default function Services() {
         </Box>
 
         <Group>
-          <Button component={Link} to="/pricing" size="md" variant="filled" color="navy">
+          <Button component={Link} to="/pricing" size="md" variant="filled" color="forest">
             See Pricing
           </Button>
-          <Button component={Link} to="/contact" size="md" variant="light" color="navy">
+          <Button component={Link} to="/contact" size="md" variant="light" color="forest">
             Get a Quote
           </Button>
         </Group>

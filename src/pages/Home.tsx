@@ -19,7 +19,7 @@ export default function Home() {
       {/* Hero */}
       <Box
         style={{
-          background: 'linear-gradient(135deg, #eedbd0 0%, #f5ede8 60%, #fff 100%)',
+          background: 'linear-gradient(135deg, #e8f7f1 0%, #f0fbf6 60%, #fff 100%)',
           borderBottom: '1px solid var(--mantine-color-gray-2)',
         }}
       >
@@ -40,7 +40,7 @@ export default function Home() {
                   component="span"
                   inherit
                   variant="gradient"
-                  gradient={{ from: 'crimson', to: 'navy', deg: 135 }}
+                  gradient={{ from: 'forest.4', to: 'forest.8', deg: 135 }}
                 >
                   artists, musicians
                 </Text>
@@ -70,7 +70,7 @@ export default function Home() {
                   to="/work"
                   size="lg"
                   variant="filled"
-                  color="navy"
+                  color="forest"
                   radius="md"
                 >
                   See Our Work
@@ -80,7 +80,7 @@ export default function Home() {
                   to="/contact"
                   size="lg"
                   variant="light"
-                  color="navy"
+                  color="forest"
                   radius="md"
                 >
                   Get a Quote
@@ -123,7 +123,7 @@ export default function Home() {
               component={Link}
               to="/work"
               variant="outline"
-              color="navy"
+              color="forest"
               size="md"
             >
               View All Projects
@@ -133,13 +133,13 @@ export default function Home() {
       </Container>
 
       {/* CTA band */}
-      <Box style={{ background: '#1a2e6e' }} py={80}>
+      <Box style={{ background: '#317256' }} py={80}>
         <Container size="lg">
           <Stack align="center" gap="lg">
             <Title order={2} c="white" ta="center">
               Ready to get your site online?
             </Title>
-            <Text c="navy.2" ta="center" size="lg" maw={480}>
+            <Text c="forest.2" ta="center" size="lg" maw={480}>
               We work with creatives at every stage — from first website to full rebrand.
             </Text>
             <Button
@@ -147,7 +147,7 @@ export default function Home() {
               to="/contact"
               size="lg"
               variant="white"
-              color="navy"
+              color="forest"
               radius="md"
             >
               Start a Conversation

@@ -93,14 +93,14 @@ export default function Pricing() {
                 padding="xl"
                 h="100%"
                 style={{
-                  borderColor: tier.highlight ? 'var(--mantine-color-navy-4)' : undefined,
+                  borderColor: tier.highlight ? 'var(--mantine-color-forest-4)' : undefined,
                   borderWidth: tier.highlight ? 2 : 1,
                   position: 'relative',
                 }}
               >
                 {tier.highlight && (
                   <Badge
-                    color="navy"
+                    color="forest"
                     variant="filled"
                     style={{ position: 'absolute', top: -12, left: '50%', transform: 'translateX(-50%)' }}
                   >
@@ -126,7 +126,7 @@ export default function Pricing() {
                       spacing="xs"
                       size="sm"
                       icon={
-                        <ThemeIcon color="navy" size={18} radius="xl" variant="light">
+                        <ThemeIcon color="forest" size={18} radius="xl" variant="light">
                           <IconCheck size={12} />
                         </ThemeIcon>
                       }
@@ -141,7 +141,7 @@ export default function Pricing() {
                     component={Link}
                     to="/contact"
                     variant={tier.highlight ? 'filled' : 'light'}
-                    color="navy"
+                    color="forest"
                     fullWidth
                     radius="md"
                   >
