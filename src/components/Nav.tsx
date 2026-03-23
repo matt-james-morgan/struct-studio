@@ -17,7 +17,7 @@ export default function Nav() {
     <Container size="lg" h="100%">
       <Group justify="space-between" h="100%">
         <Anchor component={Link} to="/" underline="never">
-          <Text fw={700} size="lg" c="violet">
+          <Text fw={700} size="lg" c="navy">
             Struct Studio
           </Text>
         </Anchor>
@@ -30,7 +30,7 @@ export default function Nav() {
               component={Link}
               to={link.href}
               underline="never"
-              c={location.pathname === link.href ? 'violet' : 'dimmed'}
+              c={location.pathname === link.href ? 'navy' : 'dimmed'}
               fw={location.pathname === link.href ? 600 : 400}
               size="sm"
             >
@@ -51,7 +51,7 @@ export default function Nav() {
               component={Link}
               to={link.href}
               underline="never"
-              c={location.pathname === link.href ? 'violet' : 'dark'}
+              c={location.pathname === link.href ? 'navy' : 'dark'}
               fw={600}
               size="md"
               onClick={close}

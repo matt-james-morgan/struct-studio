@@ -12,7 +12,7 @@ export default function WorkDetail() {
       <Container size="lg" py={64}>
         <Stack gap="lg">
           <Title order={2}>Project not found</Title>
-          <Anchor component={Link} to="/work" c="violet">
+          <Anchor component={Link} to="/work" c="navy">
             ← Back to Work
           </Anchor>
         </Stack>
@@ -44,7 +44,7 @@ export default function WorkDetail() {
 
           <Stack gap="xs">
             <Group gap="sm" align="center">
-              <Badge variant="light" color="violet" size="md">
+              <Badge variant="light" color="navy" size="md">
                 {project.type}
               </Badge>
             </Group>
@@ -71,7 +71,7 @@ export default function WorkDetail() {
                 Screenshot coming soon
               </Text>
               {project.liveUrl && (
-                <Anchor href={project.liveUrl} target="_blank" size="sm" c="violet">
+                <Anchor href={project.liveUrl} target="_blank" size="sm" c="navy">
                   Visit live site →
                 </Anchor>
               )}
@@ -100,8 +100,8 @@ export default function WorkDetail() {
             p="xl"
             style={{
               borderRadius: 12,
-              background: 'var(--mantine-color-violet-0)',
-              border: '1px solid var(--mantine-color-violet-2)',
+              background: 'var(--mantine-color-navy-0)',
+              border: '1px solid var(--mantine-color-navy-2)',
             }}
           >
             <Stack gap="sm">
@@ -113,7 +113,7 @@ export default function WorkDetail() {
                 component={Link}
                 to="/contact"
                 variant="filled"
-                color="violet"
+                color="navy"
                 radius="md"
                 style={{ alignSelf: 'flex-start' }}
               >
