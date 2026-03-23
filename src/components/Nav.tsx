@@ -18,7 +18,7 @@ export default function Nav() {
       <Group justify="space-between" h="100%">
         <Anchor component={Link} to="/" underline="never">
           <Text fw={700} size="lg" c="violet">
-            Ink &amp; Interface
+            Struct Studio
           </Text>
         </Anchor>
 
@@ -43,7 +43,7 @@ export default function Nav() {
         <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
       </Group>
 
-      <Drawer opened={opened} onClose={close} title="Ink &amp; Interface" size="xs">
+      <Drawer opened={opened} onClose={close} title="Struct Studio" size="xs">
         <Stack gap="lg" mt="md">
           {links.map((link) => (
             <Anchor

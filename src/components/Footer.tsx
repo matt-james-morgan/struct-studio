@@ -8,7 +8,7 @@ export default function Footer() {
       <Container size="lg" py="xl">
         <Group justify="space-between" wrap="wrap" gap="sm">
           <Text size="sm" c="dimmed">
-            © {new Date().getFullYear()} Ink &amp; Interface. All rights reserved.
+            © {new Date().getFullYear()} Struct Studio. All rights reserved.
           </Text>
           <Group gap="lg">
             <Anchor component={Link} to="/work" size="sm" c="dimmed" underline="never">
