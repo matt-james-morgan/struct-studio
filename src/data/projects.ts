@@ -22,6 +22,7 @@ export const projects: Project[] = [
       'Courtyard needed a home that matched their sound — energetic, clean, and always up to date. We built a site with live event listings, an embedded music player, and a Google Sheets integration so the band can update their setlist without touching any code.',
     tags: ['band', 'music', 'events', 'google sheets'],
     color: '#52bf90',
+    liveUrl: 'https://courtyard-band.vercel.app',
   },
   {
     slug: 'maple-key',
@@ -33,6 +34,7 @@ export const projects: Project[] = [
       'Maple Key Music Academy serves students across all ages and instruments. We built a complete web presence including public marketing pages, a teacher directory, and an internal scheduling and invoicing system for management.',
     tags: ['music', 'education', 'scheduling', 'academy'],
     color: '#49ab81',
+    liveUrl: 'https://maple-key-music-academy.vercel.app',
   },
   {
     slug: 'diana-rockwell',
@@ -44,6 +46,7 @@ export const projects: Project[] = [
       'Diana needed a professional online home to share her music, story, and upcoming shows. We created a site that feels as personal as her songwriting — with a bio section, press materials, an embedded music player, and a contact page for booking inquiries.',
     tags: ['musician', 'portfolio', 'singer-songwriter'],
     color: '#398564',
+    liveUrl: 'https://diana-rockwell.vercel.app',
   },
   {
     slug: 'olivia-rockwell',
@@ -55,6 +58,7 @@ export const projects: Project[] = [
       'Olivia\'s art demanded a gallery experience that felt alive. We built a fully animated portfolio with smooth page transitions, a filterable gallery, a shop section, and a commission inquiry form — all optimized for displaying her work beautifully on any device.',
     tags: ['artist', 'portfolio', 'gallery', 'shop'],
     color: '#317256',
+    liveUrl: 'https://olivia-rockwell-art.vercel.app',
   },
 ]
 

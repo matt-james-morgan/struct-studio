@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom'
 import { Container, Title, Text, Badge, Group, Stack, Button, Box, Anchor } from '@mantine/core'
 import { motion } from 'framer-motion'
 import { getProject } from '../data/projects'
+import BrowserFrame from '../components/BrowserFrame'
 
 export default function WorkDetail() {
   const { slug } = useParams<{ slug: string }>()
@@ -21,7 +22,7 @@ export default function WorkDetail() {
   }
 
   return (
-    <Container size="md" py={64}>
+    <Container size="lg" py={64}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -54,29 +55,24 @@ export default function WorkDetail() {
             </Text>
           </Stack>
 
-          {/* Screenshot placeholder */}
-          <Box
-            style={{
-              background: `linear-gradient(135deg, ${project.color}22, ${project.color}11)`,
-              border: `1px solid ${project.color}44`,
-              borderRadius: 12,
-              height: 360,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <Stack align="center" gap="xs">
-              <Text size="sm" c="dimmed">
-                Screenshot coming soon
-              </Text>
-              {project.liveUrl && (
-                <Anchor href={project.liveUrl} target="_blank" size="sm" c="forest">
-                  Visit live site →
-                </Anchor>
-              )}
-            </Stack>
-          </Box>
+          {/* Site embed or placeholder */}
+          {project.liveUrl ? (
+            <BrowserFrame url={project.liveUrl} accentColor={project.color} />
+          ) : (
+            <Box
+              style={{
+                background: `linear-gradient(135deg, ${project.color}22, ${project.color}11)`,
+                border: `1px solid ${project.color}44`,
+                borderRadius: 12,
+                height: 360,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <Text size="sm" c="dimmed">Live URL coming soon</Text>
+            </Box>
+          )}
 
           {/* About this project */}
           <Stack gap="sm">
